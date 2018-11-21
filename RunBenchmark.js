@@ -11,4 +11,18 @@
 ;(function(window,document)
 {
 	"use strict";
+	/**
+	* @struct benchmark
+	*
+	* @return struct
+	**/
+	window.benchmark=function(_function,...parameters)
+	{
+		const result = _function(...parameters);
+		const time_start = new Date();
+		const time_end = new Date();
+		const time = time_end - time_start;
+		console.log(`Result: ${result}\nExecution Time: ${time} ms.`);
+		return {result:result,start:time_start,end:time_end,time:time};
+	}
 }(window,document));
