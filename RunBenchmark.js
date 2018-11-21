@@ -12,7 +12,7 @@
 {
 	"use strict";
 	/**
-	* @struct benchmark
+	* @function benchmark
 	*
 	* @return struct
 	**/
