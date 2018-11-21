@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Example RunBenchmark.js</title>
+	</head>
+	<body>
+		<b>
+			See Console!
+		</b>
+		<script type="text/javascript" src="RunBenchmark.js"></script>
+		<script type="text/javascript">
+		//This is only a test function!
+		//E.g: fibonacci
+		function test(num)
+		{
+			if(num <= 1)
+			{
+				return 1;
+			}
+			return test(num - 1) + test(num - 2);
+		}
+		benchmark(test,10);
+		benchmarks
+		(
+			benchmark(test,20),
+			benchmark(test,25),
+			benchmark(test,30),
+			benchmark(test,40),
+		);
+		</script>
+	</body>
+</html>
