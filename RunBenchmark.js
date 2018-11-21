@@ -28,10 +28,10 @@
 		*/
 		if(performance.now)
 		{
-			var time_start = performance.now();
+			const time_start = performance.now();
 			const result = _function(...parameters);
-			var time_end = performance.now();
-			var time = time_end - time_start;
+			const time_end = performance.now();
+			const time = time_end - time_start;
 			console.log(`Result: ${result}\nExecution Time: ${time} millisecond.`);
 			return {result:result,start:time_start,end:time_end,time:time};
 		}
@@ -49,7 +49,7 @@
 				{
 					time+=parameters[i].time;
 				}
-				const average=time/count;//We using $count in ! it not should never be 0!
+				const average=time/count;//Value of $count should not be zero.
 				console.log(`Execution Time: ${time} ms.\nAverage Execution Time: ${average}`);
 			}
 		}
