@@ -1,5 +1,5 @@
 # RunBenchmark
-Tiny Library for benchmark the javascript code.
+Tiny Library for the benchmark of javascript code.
 
 
 ## Features 
