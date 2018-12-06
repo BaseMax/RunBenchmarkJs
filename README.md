@@ -10,7 +10,7 @@ Tiny Library for the benchmark of javascript code.
 
 ## Samples
 
-To view the full details, run the (https://github.com/BaseMax/RunBenchmarkJs/blob/master/Example.html)[Example.html] file.
+To view the full details, run the [https://github.com/BaseMax/RunBenchmarkJs/blob/master/Example.html](Example.html) file.
 
 ##### Execution Time
 ```
